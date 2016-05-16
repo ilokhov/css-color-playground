@@ -242,6 +242,7 @@ section {
 	-webkit-appearance: none;
 	width: 34px;
 	height: 14px;
+	background: #222;
 	border: 2px solid #222;
 	border-radius: 7px;
 	position: relative;
