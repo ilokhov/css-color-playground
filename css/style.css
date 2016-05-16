@@ -237,34 +237,11 @@ section {
 
 
 
-/* filters */
-.filter {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin: 0.4em 0;
-}
-.filter input {
-	margin: 0 6rem 0 0;
-	cursor: pointer;
-}
-#filter-output {
-	background: #222;
-	color: #fff;
-	font-family: monospace;
-	font-size: 0.7em;
-	line-height: 1.35;
-	padding: 0.75rem 1.5rem;
-	border-radius: 4px;
-}
-
 /* Color input switch */
 #color-input-switch input[type='range'] {
 	-webkit-appearance: none;
 	width: 34px;
+	height: 14px;
 	border: 2px solid #222;
 	border-radius: 7px;
 	position: relative;
@@ -350,6 +327,32 @@ section {
 
 .color-input-button {
 	cursor: pointer;
+}
+
+
+
+/* filters */
+.filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 0.4em 0;
+}
+.filter input {
+	margin: 0 6rem 0 0;
+	cursor: pointer;
+}
+#filter-output {
+	background: #222;
+	color: #fff;
+	font-family: monospace;
+	font-size: 0.7em;
+	line-height: 1.35;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4px;
 }
 
 
