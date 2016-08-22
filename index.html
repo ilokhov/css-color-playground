@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CSS color playground</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS color playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrap cf">
-		<header>
-			<h1>CSS color playground</h1>
-		</header>
-		<div class="controls">
-			<section class="colors">
-				<h2>Colors</h2>
-				<div class="item">
-					<input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(1, this, false)'}" value="90fcF9">
-					<input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(2, this, false)'}" value="ff9ae5">
-					<input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(3, this, false)'}" value="00ff7e">
-					<input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(4, this, false)'}" value="71a7fe">
-					<input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(5, this, false)'}" value="e6f75e">
-				</div>
-				<button id="btn-random-colors">generate colors
-					<span class="inner" id="btn-random-colors-inner">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</button>
-				<h3>Source</h3>
-				<div id="color-input-switch" class="item">
-					<span class="color-input-button" data-color-input="0">Random</span>
-					<input id="color-input" type="range" min="0" max="1" value="0" step="1"/>
-					<span class="color-input-button" data-color-input="1">Pastel</span>
-				</div>
-			</section>
-			<section class="filters">
-				<h2>Filters</h2>
-				<div class="item">
-					<div class="filter">
-						<span>Brightness</span>
-						<input id="brightness-input" type="range" min="0" max="200" value="100" step="1"/>
-					</div>
-					<div class="filter">
-						<span>Saturate</span>
-						<input id="saturate-input" type="range" min="0" max="200" value="100" step="1"/>
-					</div>
-					<div class="filter">
-						<span>Hue rotate</span>
-						<input id="hue-rotate-input" type="range" min="0" max="360" value="0" step="1"/>
-					</div>
-					<div class="filter">
-						<span>Grayscale</span>
-						<input id="grayscale-input" type="range" min="0" max="100" value="0" step="1"/>
-					</div>
-				</div>
-				<h3>Filter output</h3>
-				<div id="filter-output" class="item"></div>
-				<button id="btn-reset-filters">reset filters</button>
-			</section>
-		</div>
-		<div id="stage" class="shapes">
-			<div class="s s-1 col-2">
-				<div class="i-1 col-1"></div>
-				<div class="i-2 col-5"></div>
-			</div>
-			<div class="s s-2 col-4">
-				<div class="i-1 col-1"></div>
-				<div class="i-2 col-3"></div>
-				<div class="i-3 col-3"></div>
-			</div>
-			<div class="s s-3 col-3">
-				<div class="i-1 col-4"></div>
-				<div class="i-2 col-5"></div>
-				<div class="i-3 col-2"></div>
-			</div>
-			<div class="s s-4 col-1">
-				<div class="i-1 col-3"></div>
-				<div class="i-2 col-5"></div>
-			</div>
-		</div>
-		<footer>
-		CSS color playground is an online color tool demo. It is meant to showcase a clean user interface and is implemented using pure JavaScript without relying on libraries such as jQuery for manipulating the DOM. Since the project uses vanilla JavaScript and CSS filters it is unlikely to function properly in older browsers such as Internet Explorer. This project is inspired by and takes shapes from <a href="https://medium.com/@JustinMezzell/how-i-work-with-color-8439c98ae5ed">"How I Work with Color"</a> and uses the <a href="http://jscolor.com/">jscolor library</a> as well as <a href="http://stackoverflow.com/a/12266311">this helper function</a> to generate pastel colors.<br><br>
-		by <a href="https://github.com/ilokhov">Ivan Lokhov</a> / <a href="https://github.com/ilokhov/css-color-playground">Source</a>
-		</footer>
-	</div>
+  <div class="wrap cf">
+    <header>
+      <h1>CSS color playground</h1>
+    </header>
+    <div class="controls">
+      <section class="colors">
+        <h2>Colors</h2>
+        <div class="item">
+          <input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(1, this, false)'}" value="90fcF9">
+          <input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(2, this, false)'}" value="ff9ae5">
+          <input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(3, this, false)'}" value="00ff7e">
+          <input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(4, this, false)'}" value="71a7fe">
+          <input class="jscolor" data-jscolor="{hash:true, position:'right', onFineChange:'debounceUpdateCol(5, this, false)'}" value="e6f75e">
+        </div>
+        <button id="btn-random-colors">generate colors
+          <span class="inner" id="btn-random-colors-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <h3>Source</h3>
+        <div id="color-input-switch" class="item">
+          <span class="color-input-button" data-color-input="0">Random</span>
+          <input id="color-input" type="range" min="0" max="1" value="0" step="1"/>
+          <span class="color-input-button" data-color-input="1">Pastel</span>
+        </div>
+      </section>
+      <section class="filters">
+        <h2>Filters</h2>
+        <div class="item">
+          <div class="filter">
+            <span>Brightness</span>
+            <input id="brightness-input" type="range" min="0" max="200" value="100" step="1"/>
+          </div>
+          <div class="filter">
+            <span>Saturate</span>
+            <input id="saturate-input" type="range" min="0" max="200" value="100" step="1"/>
+          </div>
+          <div class="filter">
+            <span>Hue rotate</span>
+            <input id="hue-rotate-input" type="range" min="0" max="360" value="0" step="1"/>
+          </div>
+          <div class="filter">
+            <span>Grayscale</span>
+            <input id="grayscale-input" type="range" min="0" max="100" value="0" step="1"/>
+          </div>
+        </div>
+        <h3>Filter output</h3>
+        <div id="filter-output" class="item"></div>
+        <button id="btn-reset-filters">reset filters</button>
+      </section>
+    </div>
+    <div id="stage" class="shapes">
+      <div class="s s-1 col-2">
+        <div class="i-1 col-1"></div>
+        <div class="i-2 col-5"></div>
+      </div>
+      <div class="s s-2 col-4">
+        <div class="i-1 col-1"></div>
+        <div class="i-2 col-3"></div>
+        <div class="i-3 col-3"></div>
+      </div>
+      <div class="s s-3 col-3">
+        <div class="i-1 col-4"></div>
+        <div class="i-2 col-5"></div>
+        <div class="i-3 col-2"></div>
+      </div>
+      <div class="s s-4 col-1">
+        <div class="i-1 col-3"></div>
+        <div class="i-2 col-5"></div>
+      </div>
+    </div>
+    <footer>
+    CSS color playground is an online color tool demo. It is meant to showcase a clean user interface and is implemented using pure JavaScript without relying on libraries such as jQuery for manipulating the DOM. Since the project uses vanilla JavaScript and CSS filters it is unlikely to function properly in older browsers such as Internet Explorer. This project is inspired by and takes shapes from <a href="https://medium.com/@JustinMezzell/how-i-work-with-color-8439c98ae5ed">"How I Work with Color"</a> and uses the <a href="http://jscolor.com/">jscolor library</a> as well as <a href="http://stackoverflow.com/a/12266311">this helper function</a> to generate pastel colors.<br><br>
+    by <a href="https://github.com/ilokhov">Ivan Lokhov</a> / <a href="https://github.com/ilokhov/css-color-playground">Source</a>
+    </footer>
+  </div>
 
-	<script src="lib/jscolor.min.js"></script>
-	<script src="js/script.js"></script>
+  <script src="lib/jscolor.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
